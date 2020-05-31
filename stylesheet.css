@@ -105,17 +105,6 @@ header{
   margin-bottom:40px;
 }
 
-#p1{
-  grid-area: tile1;
-}
-
-#p2{
-  grid-area: tile2;
-}
-
-#p3{
-  grid-area:tile3;
-}
 
 .project-ss{
   height:300px;
@@ -144,8 +133,8 @@ header{
 
 .project-name span{
   display:inline-block;
+  line-height: 100px;
   font-size:20px;
-  padding-top:36px;
 }
 
 .projectspan{
@@ -362,12 +351,26 @@ footer p{
     font-size:20px;
   }
   .project-h h2{
-    font-size:25px;
+    font-size:20px;
   }
   .contact-msg h2{
     font-size:40px;
   }
   .contact-msg h3{
     font-size:16px;
+  }
+  .project-link{
+    height:350px;
+    width:300px;
+  }
+  .project-ss{
+    height:280px;
+    width:300px;
+  }
+  .project-name{
+    height:70px;
+  }
+  .project-name span{
+    line-height: 70px;
   }
 }
