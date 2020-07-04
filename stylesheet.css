@@ -13,7 +13,7 @@ a{
 
 header{
   z-index:3;
-  height:70px;
+  height:50px;
   background:rgb(168, 57, 57);
   position:fixed;
   border-bottom:2px solid rgb(32, 37, 37);
@@ -24,8 +24,8 @@ header{
   margin:0;
   color:white;
   font-family: 'Marcellus SC', serif;
-  line-height: 70px;
-  font-size:30px;
+  line-height: 50px;
+  font-size:24px;
   flex-basis: 1.5em;
   padding-left:1.5em;
   padding-right:1.5em;
@@ -58,7 +58,7 @@ header{
 
 .welcome-section h1,.welcome-section h3{
   position:relative;
-  top:50vh;
+  top:45vh;
 }
 
 .welcome-section h1{
@@ -76,7 +76,7 @@ header{
   font-weight:normal;
 }
 
-#projects{
+.projects{
   padding-top:70px;
   background:linear-gradient(-75deg,#3399FF,#CCFF66);
   display: flex;
@@ -105,11 +105,6 @@ header{
   margin-bottom:40px;
 }
 
-
-.project-ss{
-  height:300px;
-  width:350px;
-}
 
 .project-link{
   display: flex;
@@ -148,6 +143,69 @@ header{
   animation-fill-mode: forwards;
 }
 
+#p7{
+  background:url("./images/teachersdiary.png");
+  background-repeat: no-repeat;
+  background-size: 350px 300px;
+}
+
+#p7:hover{
+  background: url('./gifs/demoteachers.gif');
+  background-repeat: no-repeat;
+  background-size: 350px 300px;
+}
+
+#p6{
+  background:url("./images/faccountry.png");
+  background-repeat: no-repeat;
+  background-size: 350px 300px;
+}
+
+#p6:hover{
+  background: url('./gifs/demofaccountry.gif');
+  background-repeat: no-repeat;
+  background-size: 350px 300px;
+}
+
+#p1{
+  background:url("./images/intervtimer.png");
+  background-repeat: no-repeat;
+  background-size: 350px 300px;
+}
+
+#p1:hover{
+  background: url('./gifs/demotimer.gif');
+  background-size: 350px 300px;
+  background-color: #022c43;
+  background-repeat: no-repeat;
+}
+
+
+.project-ss{
+  height:300px;
+  width:350px;
+}
+
+.blog-ss{
+  height:150px;
+  width:300px;
+}
+
+.blog-link{
+  width:300px;
+  height:220px;
+}
+
+.blog-name{
+  height:70px;
+  padding-top: 20px;
+}
+
+.blog-name span{
+  line-height: unset;
+}
+
+
 #education{
   height:600px;
   background:rgb(200,200,200);
@@ -159,7 +217,7 @@ header{
 }
 
 #contact{
-  height:80vh;
+  height:90vh;
   background:rgb(32, 37, 37);
   display:flex;
   flex-direction: column;
@@ -278,6 +336,12 @@ header{
   width:60%;
 }
 .js{
+  width:60%;
+}
+.react{
+  width:50%;
+}
+.express{
   width:50%;
 }
 .html{
@@ -373,4 +437,28 @@ footer p{
   .project-name span{
     line-height: 70px;
   }
+  #p7{
+    background-size: 300px 280px;
+  }
+  
+  #p7:hover{
+    background-size: 300px 200px;
+  }
+  
+  #p6{
+    background-size: 300px 280px;
+  }
+  
+  #p6:hover{
+    background-size: 300px 230px;
+  }
+  
+  #p1{
+    background-size: 300px 280px;
+  }
+  
+  #p1:hover{
+    background-size: 300px 280px;
+  }
+  
 }
