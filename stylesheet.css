@@ -437,12 +437,30 @@ footer p{
   .project-name span{
     line-height: 70px;
   }
+  .blog-ss{
+    height:150px;
+    width:300px;
+  }
+  
+  .blog-link{
+    width:300px;
+    height:220px;
+  }
+  
+  .blog-name{
+    height:70px;
+    padding-top: 20px;
+  }
+  
+  .blog-name span{
+    line-height: unset;
+  }
   #p7{
     background-size: 300px 280px;
   }
   
   #p7:hover{
-    background-size: 300px 200px;
+    background-size: 300px 280px;
   }
   
   #p6{
@@ -450,7 +468,7 @@ footer p{
   }
   
   #p6:hover{
-    background-size: 300px 230px;
+    background-size: 300px 280px;
   }
   
   #p1{
