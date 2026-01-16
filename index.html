@@ -1,11 +1,23 @@
+<!-- . Firebase Console (Firebase Hosting Section): In the Firebase Console, navigate to the "Hosting" section for your project. If you've previously connected GitHub, you should see your deployed sites listed. For a site connected to GitHub, click on its entry. You'll often find a "GitHub integration" or "Deployment history" section. Here, you can usually verify the connected repository, the branch configured for live deployments (which should be your main branch), and whether automatic deployments are enabled for pushes to that branch. The console provides a high-level overview and a log of past deployments, showing which GitHub commit triggered them.
+2. GitHub Repository (GitHub Actions): For more granular detail and control, you'll need to examine your GitHub repository directly. Firebase Hosting frequently leverages GitHub Actions for continuous deployment.
+.github/workflows directory: Look inside your repository for a directory named .github/workflows . Within this, you should find YAML configuration files (e.g., firebase-hosting-pull-request.yml or firebase-hosting-merge.yml ). These files define your deployment workflows.
+Workflow Logic: Open these YAML files. They will specify:
+Triggers: What events initiate the workflow (e.g., on: push to the main branch). This is how you confirm auto-deployments are set up.
+Deployment Steps: The commands executed to build and deploy your web app to Firebase Hosting.
+GitHub Actions Tab: In your GitHub repository, go to the "Actions" tab. This tab displays a history of all workflow runs, including deployments. You can see if workflows are being triggered on pushes to your main branch, the status of each deployment, and detailed logs for troubleshooting. This tab is crucial for verifying that the auto-deployment pipeline is actively working.
+By checking these two locations, you can confirm the GitHub connection and whether auto-deployments are enabled from your main branch to Firebase Hosting.
+Here are a few follow-up questions you might consider:
+What are the best practices for setting up a firebase.json file for continuous deployment to Firebase Hosting?
+How can I troubleshoot a failed GitHub Actions deployment to Firebase Hosting?
+Can I use GitHub Actions to deploy different environments (e.g., staging and production) from separate branches to Firebase Hosting? -->
 <html>
   <head>
   <link rel="stylesheet" href="stylesheet.css">
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <meta content="height=device-height, initial-scale=1" name="viewport">
   <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>Abhishek</title>
 </head>
 <body>
@@ -14,7 +26,6 @@
       <ul class="nav-list">
         <a href="#welcome-section" class="nav-link"><li>About</li></a>
         <a href="#projects" class="nav-link"><li>Work</li></a>
-        <a href="#skills" class="nav-link"><li>Skills</li></a>
         <a href="#contact" class="nav-link"><li>Contact</li></a>
       </ul>
     </nav>
@@ -30,29 +41,29 @@
     <h2>Projects</h2>
     </div>
     <div class="project-links">
-      <a href="https://teachersdiary.herokuapp.com" class="project-link" target="_blank">
-        <div id='p7' class="project-ss" ></div>
-        <div  class="project-name"><span class="projectspan">&lt;</span><span>&nbsp; Teacher's Diary &nbsp;</span><span class="projectspan">/&gt;</span></div>
+      <a href="https://github.com/abhishek-031/teachersdiary" class="project-link" target="_blank">
+        <div id='p7' class="project-ss"></div>
+        <div class="project-name"><span class="projectspan">&lt;</span><span>&nbsp; Teacher's Diary &nbsp;</span><span class="projectspan">/&gt;</span></div>
       </a>
       <a href="https://faccountry-1.web.app" class="project-link" target="_blank">
         <div id='p6' class="project-ss"></div>
-        <div  class="project-name"><span class="projectspan">&lt;</span><span>&nbsp; Faccountry &nbsp;</span><span class="projectspan">/&gt;</span></div>
+        <div class="project-name"><span class="projectspan">&lt;</span><span>&nbsp; Faccountry &nbsp;</span><span class="projectspan">/&gt;</span></div>
       </a>
       <a href="https://intervtimer.web.app" class="project-link" target="_blank">
         <div id='p1' class="project-ss"></div>
-        <div  class="project-name"><span class="projectspan">&lt;</span><span>&nbsp; IntervTimer &nbsp;</span><span class="projectspan">/&gt;</span></div>
+        <div class="project-name"><span class="projectspan">&lt;</span><span>&nbsp; IntervTimer &nbsp;</span><span class="projectspan">/&gt;</span></div>
       </a>
-      <a id="p2" href="https://listingappp.web.app" class="project-link" target="_blank">
+      <a href="https://listingappp.web.app" class="project-link" target="_blank">
         <img src="./images/Listingapp.png" class="project-ss">
-        <div  class="project-name"><span class="projectspan">&lt;</span><span>&nbsp; ListingApp &nbsp;</span><span class="projectspan">/&gt;</span></div>
+        <div class="project-name"><span class="projectspan">&lt;</span><span>&nbsp; ListingApp &nbsp;</span><span class="projectspan">/&gt;</span></div>
       </a>
-      <a id="p3" href="https://codepen.io/abhishek-031/full/WNQjprm" class="project-link" target="_blank">
+      <a href="https://codepen.io/abhishek-031/full/WNQjprm" class="project-link" target="_blank">
         <img src="./images/landing-ss.png" class="project-ss">
-        <div  class="project-name"><span class="projectspan">&lt;</span><span>&nbsp; Product Landing Page &nbsp;</span><span class="projectspan">/&gt;</span></div>
+        <div class="project-name"><span class="projectspan">&lt;</span><span>&nbsp; Product Landing Page &nbsp;</span><span class="projectspan">/&gt;</span></div>
       </a>
-      <a id="p4" href="https://codepen.io/abhishek-031/full/oNjWmoJ" class="project-link" target="_blank">
+      <a href="https://codepen.io/abhishek-031/full/oNjWmoJ" class="project-link" target="_blank">
         <img src="./images/docs-ss.png" class="project-ss">
-        <div class="project-name"><span class="projectspan">&lt;</span><span> &nbsp; Technical Documentation Page &nbsp; </span><span class="projectspan">/&gt;</span></div>
+        <div class="project-name"><span class="projectspan">&lt;</span><span>&nbsp; Technical Documentation &nbsp;</span><span class="projectspan">/&gt;</span></div>
       </a>
     </div>
 
@@ -61,63 +72,55 @@
     </div>
     <div class='project-links' style="padding-bottom: 100px;">
       <a class='project-link blog-link' target='_blank' href='https://medium.com/@cabhishek712/git-and-github-what-are-they-5e56dde88dd4'>
-        <img class='project-ss blog-ss' src='./images/gitimage.png' >
-        <div class='project-name blog-name'><span class='projectspan'>"</span>&nbsp;Git and Github. What are they?&nbsp;<span class='projectspan'>"</span> </div>
+        <div class='project-ss blog-ss blog-placeholder git-blog'>
+          <span class="iconify blog-icon" data-icon="mdi:git" data-inline="false"></span>
+        </div>
+        <div class='project-name blog-name'><span class='projectspan'>"</span>&nbsp;Git and Github. What are they?&nbsp;<span class='projectspan'>"</span></div>
       </a>
       <a class='project-link blog-link' target='_blank' href='https://medium.com/@cabhishek712/how-i-implemented-a-loading-spinner-in-a-react-application-d4cd46a3a2e0'>
-        <img class='project-ss blog-ss' src='./gifs/loader.gif' >
-        <div class='project-name blog-name'><span class='projectspan'>"</span>&nbsp;How I implemented a loading spinner in a React application?&nbsp;<span class='projectspan'>"</span> </div>
+        <div class='project-ss blog-ss blog-placeholder react-blog'>
+          <span class="iconify blog-icon" data-icon="mdi:loading" data-inline="false"></span>
+        </div>
+        <div class='project-name blog-name'><span class='projectspan'>"</span>&nbsp;Loading Spinner in React Application&nbsp;<span class='projectspan'>"</span></div>
       </a>
       <a class='project-link blog-link' target='_blank' href='https://medium.com/@cabhishek712/the-lifecycle-of-a-reactjs-component-ce36edfbaa86'>
-        <img class='project-ss blog-ss' style="background-color: white;" src='./images/reactlogo.png' >
-        <div class='project-name blog-name'><span class='projectspan'>"</span>&nbsp;The Lifecycle of a ReactJS Component&nbsp;<span class='projectspan'>"</span> </div>
+        <div class='project-ss blog-ss blog-placeholder react-blog'>
+          <span class="iconify blog-icon" data-icon="logos:react" data-inline="false"></span>
+        </div>
+        <div class='project-name blog-name'><span class='projectspan'>"</span>&nbsp;The Lifecycle of a ReactJS Component&nbsp;<span class='projectspan'>"</span></div>
+      </a>
+      <a class='project-link blog-link' target='_blank' href='https://medium.com/@cabhishek712/branching-in-git-and-collaboration-4f5de6f5564'>
+        <div class='project-ss blog-ss blog-placeholder git-blog'>
+          <span class="iconify blog-icon" data-icon="mdi:source-branch" data-inline="false"></span>
+        </div>
+        <div class='project-name blog-name'><span class='projectspan'>"</span>&nbsp;Branching in Git and Collaboration&nbsp;<span class='projectspan'>"</span></div>
+      </a>
+      <a class='project-link blog-link' target='_blank' href='https://medium.com/@cabhishek712/implementing-a-loader-loading-spinner-in-react-function-components-950eef0f4253'>
+        <div class='project-ss blog-ss blog-placeholder react-blog'>
+          <span class="iconify blog-icon" data-icon="logos:react" data-inline="false"></span>
+        </div>
+        <div class='project-name blog-name'><span class='projectspan'>"</span>&nbsp;Loading Spinner in React Function Components&nbsp;<span class='projectspan'>"</span></div>
+      </a>
+      <a class='project-link blog-link' target='_blank' href='https://medium.com/@cabhishek712/learn-javascript-summarising-you-dont-know-js-up-going-book-1-2d3e42664f78'>
+        <div class='project-ss blog-ss blog-placeholder js-blog'>
+          <span class="iconify blog-icon" data-icon="logos:javascript" data-inline="false"></span>
+        </div>
+        <div class='project-name blog-name'><span class='projectspan'>"</span>&nbsp;YDKJS: Up & Going (Book 1)&nbsp;<span class='projectspan'>"</span></div>
+      </a>
+      <a class='project-link blog-link' target='_blank' href='https://medium.com/@cabhishek712/learn-javascript-summarising-you-dont-know-js-scopes-closures-book-2-3d2a6f4c5e2b'>
+        <div class='project-ss blog-ss blog-placeholder js-blog'>
+          <span class="iconify blog-icon" data-icon="logos:javascript" data-inline="false"></span>
+        </div>
+        <div class='project-name blog-name'><span class='projectspan'>"</span>&nbsp;YDKJS: Scopes & Closures (Book 2)&nbsp;<span class='projectspan'>"</span></div>
+      </a>
+      <a class='project-link blog-link' target='_blank' href='https://medium.com/@cabhishek712/learn-javascript-summarising-you-dont-know-js-this-object-prototypes-book-3-4052a4fc29d9'>
+        <div class='project-ss blog-ss blog-placeholder js-blog'>
+          <span class="iconify blog-icon" data-icon="logos:javascript" data-inline="false"></span>
+        </div>
+        <div class='project-name blog-name'><span class='projectspan'>"</span>&nbsp;YDKJS: this & Object Prototypes (Book 3)&nbsp;<span class='projectspan'>"</span></div>
       </a>
     </div>
 
-  </section>
-
-  <section id="skills" class="skills">
-      <h2>-- Skills --</h2>
-
-      <p>JavaScript</p>
-      <div class="skill-bar">
-        <div class="skill js">60</div>
-      </div>
-
-      <p>React</p>
-      <div class="skill-bar">
-        <div class="skill react">50</div>
-      </div>
-
-      <p>ExpressJS</p>
-      <div class="skill-bar">
-        <div class="skill express">50</div>
-      </div>
-
-      <p>UI/UX Design</p>
-      <div class="skill-bar">
-        <div class="skill des">50</div>
-      </div>
-
-      <p>C++</p>
-      <div class="skill-bar">
-        <div class="skill cpp">80</div>
-      </div>
-
-      <p>Java</p>
-      <div class="skill-bar">
-        <div class="skill java">60</div>
-      </div>
-
-      <p>Data Structures and Algorithms</p>
-      <div class="skill-bar">
-        <div class="skill dsa">70</div>
-      </div>
-
-      <p>HTML CSS</p>
-      <div class="skill-bar">
-        <div class="skill html">60</div>
-      </div>
   </section>
 
   <section id="contact" class="contact">
